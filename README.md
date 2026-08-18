@@ -7,7 +7,7 @@
 ## 快速开始（选你的身份）
 
 - **WorkBuddy 用户** → 看 [安装](#安装)，把目录放进 `~/.workbuddy/skills/`，新会话问"菜板怎么选"即自动生效
-- **想复制去问 ChatGPT/Claude/Kimi 等任意 AI** → 复制 [`references/prompt_for_other_ai.md`](references/prompt_for_other_ai.md) 的 Prompt + [`references/materials.csv`](references/materials.csv)（或 [`references/materials.md`](references/materials.md) 人类可读版）一起发过去
+- **想复制去问 ChatGPT/Claude/Kimi 等任意 AI** → 复制 [`references/ai-pack.txt`](references/ai-pack.txt) 的**整段内容**发给它即可（内含顾问指令 + 25 材质数据 + 红线 + 规则，无需再带其他文件；聊天 AI 打不开网页链接，只能吃文本）
 - **想读数据 / 提 PR** → 看 [`references/materials.md`](references/materials.md)（人类可读表）+ [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 ## 它解决什么
@@ -43,7 +43,8 @@ wood-cutting-board-advisor/
 └── references/
     ├── materials.csv           # 25材质 × 16字段（机器可读：含电商可得性）
     ├── materials.md            # 同数据人类可读版（脚本同步生成，勿手改）
-    ├── prompt_for_other_ai.md  # 可复制去问任意 AI 的顾问 Prompt
+    ├── ai-pack.txt             # ⭐ 复制即用的一键顾问包（数据+规则+红线整段文本，发给任意AI即可）
+    ├── prompt_for_other_ai.md  # 顾问 Prompt 原文（数据源与使用逻辑解耦）
     └── buying-checklist.md     # 收货验货 + 开板养护清单
 ```
 
